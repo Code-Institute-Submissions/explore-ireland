@@ -1,0 +1,26 @@
+.content-1 {
+  overflow-y: auto;
+}
+.card-container {
+  display: flex;
+}
+.card__explore {
+  background-color: gray;
+  height: 28rem;
+  width: 17rem;
+  padding: 2rem;
+  // margin-right: 2rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px rgba(black, 1.0);
+  transition: 0.3s;
+}
+.card__explore:not(:first-child) {
+  margin-right: -3rem;
+  min-width: 17rem;
+}
+.card__explore:hover {
+  transform: translateY(-1rem);
+}
+.card__explore:hover~.card__explore {
+  transform: translateX(1rem);
+}
