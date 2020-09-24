@@ -1,0 +1,28 @@
+/* ===================
+   Base resets
+   ================= */
+   body,
+   html {
+     margin: 0 auto;
+     padding: 0;
+     height: 100%;
+     font-size: 62.5%;
+   }
+   
+   *,
+   *:before,
+   *:after {
+     box-sizing: border-box;
+   }
+   
+   * li {
+     list-style: none;
+   }
+   
+   * a {
+     text-decoration: none;
+   }
+   
+   * ul {
+     padding: 0;
+   }
