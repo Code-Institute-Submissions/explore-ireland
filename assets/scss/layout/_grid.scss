@@ -1,0 +1,16 @@
+/* ===================
+   Mobile grid
+   ================= */
+.container-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 50rem 30rem 18rem 45rem 29rem;
+  grid-template-areas: 
+  "nav"
+  "hero-image"
+  "content-home-1"
+  "content-homee-2"
+  "content-home-3"
+  "footer";
+  margin: 0 1.5rem 0 1.5rem;
+}
