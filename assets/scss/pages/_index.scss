@@ -1,8 +1,22 @@
-.content-1 {
+.nav-title {
+  color: $nav-logo-color;
+}
+.wrapper-mobile {
+  margin: 0 1rem 0 1rem;
+}
+.hero-image {
+  margin: 0 auto;
+}
+.hero-image img {
+   border-radius: $primary-radius;
+}
+.home-grid-area-1 {
   overflow-y: auto;
 }
 .card-container {
   display: flex;
+  align-items: center;
+  height: 100%;
 }
 .card__explore {
   background-color: gray;
@@ -21,6 +35,48 @@
 .card__explore:hover {
   transform: translateY(-1rem);
 }
+
 .card__explore:hover~.card__explore {
   transform: translateX(1rem);
+}
+
+.container__page-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #EDF2F5;
+  padding: 2rem 2rem 2rem 1.5rem;
+  height: 100%;
+
+  &.container__page-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondary-color;
+    border: 2px solid #0BB2AC;
+    border-bottom-left-radius: 1.5rem;
+    padding: 10px;
+    color: white;
+  }
+}
+
+.page__links-text{
+  margin-right: 10rem;
+}
+
+.container__page-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 1rem;
+  height: 100%;
+  width: 100%;
+
+  &.container__page-images li {
+    background-color: yellowgreen;
+    height: 10rem;
+    width: 15rem;
+  }
 }
