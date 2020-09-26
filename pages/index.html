@@ -10,9 +10,9 @@
 
 <body>
   <div class="container-home">
-    <nav>
-      <a class="site-logo" href="index.html" aria-label="this is a logo with a link to the homepage">
-        <h2>Explore ireland</h2>
+    <nav class="wrapper-mobile">
+      <a href="index.html" aria-label="this is a logo with a link to the homepage">
+        <h2 class="nav-title">Explore ireland</h2>
       </a>
       <!-- <ul class="nav-links">
           <li class="active"><a href="index.html">home</a></li>
@@ -21,14 +21,44 @@
         </ul> -->
       <!-- This mobile menu hamburger is not original work ( see readme for credit) -->
       <div class="mobile-menu" onclick="mobileMenuOpen(this)">
-        <h2>menu</h2>
+      </div>
+      <div class=nav-footer>
+        <a href="http://" class="nav__link-footer">
+          <svg class="icon footer-icon">
+            <use xlink:href="/assets/images/icons/home-icon.svg#icon-home" tabindex="0">
+              <span class="nav__link-footer-text">home</span>
+            </use>
+          </svg>
+        </a>
+        <a href="http://" class="nav__link-footer">
+          <svg class="icon footer-icon">
+            <use xlink:href="/assets/images/icons/icon-compass.svg#icon-compass" tabindex="0">
+              <span class="nav__link-footer-text">Explore</span>
+            </use>
+          </svg>
+        </a>
+        <a href="http://" class="nav__link-footer">
+          <svg class="icon footer-icon">
+            <use xlink:href="/assets/images/icons/map-icon.svg#icon-map" tabindex="0">
+              <span class="nav__link-footer-text">Attractions</span>
+            </use>
+          </svg>
+        </a>
+        <a href="http://" class="nav__link-footer">
+          <svg class="icon footer-icon">
+            <use xlink:href="/assets/images/icons/menu-closed-icon.svg#icon-menu-closed" tabindex="0">
+              <span class="nav__link-footer-text">Menu</span>
+            </use>
+          </svg>
+        </a>
       </div>
     </nav>
 
     <div class="hero-image">
       <img src="/assets/images/hero-image-mobile.jpg" alt="picture of mountains in ireland">
     </div>
-    <div class="content-1">
+
+    <div class="home-grid-area-1 wrapper-mobile">
       <div class="card-container">
         <div class="card__explore">
           <img src="" alt="">
@@ -57,8 +87,53 @@
         </div>
       </div>
     </div>
-    <div class="content-2">content-2</div>
-    <div class="content-3">content-3</div>
+    <div class="home-grid-area-2">
+      <div class="container__page-links">
+        <a class="page-links-nature">
+          <svg class="icon icon-nature">
+            <use xlink:href="/assets/images/icons/icon-nature.svg#icon-nature" tabindex="0">
+              <span class="page__links-text">Nature</span>
+            </use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="/assets/images/icons/icon-arrow.svg#icon-arrow" tabindex="0">
+            </use>
+          </svg>
+        </a>
+        <a class="page-links-hsitory">
+          <svg class="icon">
+            <use xlink:href="/assets/images/icons/icon-history.svg#icon-history" tabindex="0">
+              <span class="page__links-text">History</span>
+            </use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="/assets/images/icons/icon-arrow.svg#icon-arrow" tabindex="0">
+            </use>
+          </svg>
+        </a>
+        <a class="page-links-explore">
+          <svg class="icon">
+            <use xlink:href="/assets/images/icons/icon-compass.svg#icon-compass" tabindex="0">
+              <span class="page__links-text">Explore</span>
+            </use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href="/assets/images/icons/icon-arrow.svg#icon-arrow" tabindex="0">
+            </use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="home-grid-area-3">
+      <ul class="container__page-images">
+        <li><a href="http://"></a><img src="" alt=""></li>
+        <li><a href="http://"></a><img src="" alt=""></li>
+        <li><a href="http://"></a><img src="" alt=""></li>
+        <li><a href="http://"></a><img src="" alt=""></li>
+        <li><a href="http://"></a><img src="" alt=""></li>
+        <li><a href="http://"></a><img src="" alt=""></li>
+      </ul>
+    </div>
 
     <footer>
       <div class="footer-container">
