@@ -1,52 +1,93 @@
 .nav-title {
   color: $nav-logo-color;
 }
+
 .wrapper-mobile {
   margin: 0 1rem 0 1rem;
 }
+
 .hero-image {
   margin: 0 auto;
 }
+
 .hero-image img {
-   border-radius: $primary-radius;
-}
-.home-grid-area-1 {
-  overflow-y: auto;
-}
-.card-container {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.card__explore {
-  background-color: gray;
-  height: 28rem;
-  width: 17rem;
-  padding: 2rem;
-  // margin-right: 2rem;
-  border-radius: 1rem;
-  box-shadow: 5px 5px 15px rgba(black, 1.0);
-  transition: 0.3s;
-}
-.card__explore:not(:first-child) {
-  margin-right: -3rem;
-  min-width: 17rem;
-}
-.card__explore:hover {
-  transform: translateY(-1rem);
+  border-radius: $primary-radius;
 }
 
-.card__explore:hover~.card__explore {
-  transform: translateX(1rem);
+.home-grid-area-1 {
+  overflow: auto;
+}
+
+.card-container {
+  display: flex;
+  height: 100%;
+  padding: 1rem;
+}
+
+.card__explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 12px rgba(black, 2.0);
+  background: white;
+  transition: 0.3s;
+  text-align: center;
+  min-width: 22rem;
+
+  &.card__explore:not(:second-child) {
+    margin-left: -3rem;
+    // min-width: 17rem;
+  }
+
+  &.card__explore:hover {
+    transform: translateY(-1rem);
+  }
+
+  &.card__explore:hover {
+    ~.card__explore {
+      transform: translateX(3rem);
+    }
+  }
+}
+
+.card__explore-title {
+  display: flex;
+  flex-direction: column;
+  background-color: #1E5F74;
+  border-radius: $card-radius;
+  margin-right: 3rem;
+}
+
+.card__explore-title h1 {
+  transform: rotate(-90deg);
+  margin: auto;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.card__explore-btn p {
+  margin: auto;
+}
+
+.card-container img {
+  height: 13rem;
+  width: 100%;
+  border-radius: 1rem  0;
+}
+
+.card-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 7rem;
 }
 
 .container__page-links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   gap: 1rem;
   background-color: #EDF2F5;
-  padding: 2rem 2rem 2rem 1.5rem;
+  padding: 3rem 2rem 1.5rem 2rem;
   height: 100%;
 
   &.container__page-links a {
@@ -56,12 +97,12 @@
     background-color: $secondary-color;
     border: 2px solid #0BB2AC;
     border-bottom-left-radius: 1.5rem;
-    padding: 10px;
+    padding: 1rem;
     color: white;
   }
 }
 
-.page__links-text{
+.page__links-text {
   margin-right: 10rem;
 }
 
