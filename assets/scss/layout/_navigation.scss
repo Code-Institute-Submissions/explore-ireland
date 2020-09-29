@@ -1,5 +1,62 @@
-nav {
+.nav-menu-navbar {
   display: flex;
-  justify-content: space-between;
+  position: fixed;
+  bottom: 1rem;
+  right: 0;
+  left: 0;
+  margin: 0 1rem 0 1rem;
+  padding: 5px 0 5px 0;
+  border-radius: 1rem;
+  background-color: #ECEBEB;
+  z-index: 1000;
+}
+
+.nav__menu-bottom-text {
+  padding: 5px;
+  font-size: 1.3rem;
+  color: #83898B;
+}
+
+.nav__menu-bottom-link {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   align-items: center;
+}
+
+.mobile-menu {
+  cursor: pointer;
+}
+
+// Nav menu mobile open
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background-color: #c6cbcf;
+  clip-path: square(100px at 90% -10%);
+  transition: all 1s ease-in-out;
+  overflow-y: hidden;
+  z-index: 100;
+
+  &.nav-links.open {
+    height: 100%;
+    pointer-events: all;
+  }
+
+  &.nav-links ul {
+    margin-top: 2rem;
+  }
+
+  &.nav-links li {
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 0 1rem 0px;
+    margin-left: 3rem;
+    width: 80%;
+    border-bottom: 1px solid #adb4b4;
+  }
 }
