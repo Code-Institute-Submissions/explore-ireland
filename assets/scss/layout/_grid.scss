@@ -4,9 +4,7 @@
 .container-home {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5rem 50rem 35rem 25rem 45rem 29rem 5rem;
   gap: 2rem;
-  // margin: 0 1.5rem 0 1.5rem;
   font-size: $primary-font-size;
   grid-template-areas: 
   "nav"
@@ -20,18 +18,24 @@
 nav {
   grid-area: nav;
 }
+
 .hero-image {
   grid-area: hero-image;
 }
+
 .home-grid-area-1 {
   grid-area: home-grid-area-1;
 }
+
 .home-grid-area-2 {
   grid-area: home-grid-area-2;
 }
+
 .home-grid-area-3 {
   grid-area: home-grid-area-3;
 }
+
 footer {
   grid-area: footer;
 }
+
