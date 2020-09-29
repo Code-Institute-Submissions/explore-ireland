@@ -10,136 +10,196 @@
 
 <body>
   <div class="container-home">
-    <nav class="wrapper-mobile">
+
+    <nav>
       <a href="index.html" aria-label="this is a logo with a link to the homepage">
-        <h2 class="nav-title">Explore ireland</h2>
+        <h2 class="site-logo">Explore ireland</h2>
       </a>
-      <!-- <ul class="nav-links">
-          <li class="active"><a href="index.html">home</a></li>
-          <li><a href="learn-code.html">learn code</a></li>
-          <li><a href="getting-started.html">getting started</a></li>
-        </ul> -->
       <!-- This mobile menu hamburger is not original work ( see readme for credit) -->
-      <div class="mobile-menu" onclick="mobileMenuOpen(this)">
+      <div>
+        <ul class="nav-menu-navbar">
+          <li>
+            <a href="http://" class="nav__menu-bottom-link">
+              <svg class="icon icon-footer">
+                <use xlink:href="/assets/images/icons/home-icon.svg#icon-home" tabindex="0">
+                  <span class="nav__menu-bottom-text">home</span>
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="http://" class="nav__menu-bottom-link">
+              <svg class="icon icon-footer">
+                <use xlink:href="/assets/images/icons/icon-compass.svg#icon-compass" tabindex="0">
+                  <span class="nav__menu-bottom-text">Explore</span>
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="http://" class="nav__menu-bottom-link">
+              <svg class="icon icon-footer">
+                <use xlink:href="/assets/images/icons/map-icon.svg#icon-map" tabindex="0">
+                  <span class="nav__menu-bottom-text">Attractions</span>
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu">
+            <a href="http://" class="nav__menu-bottom-link">
+              <svg class="icon icon-footer">
+                <use xlink:href="/assets/images/icons/menu-closed-icon.svg#icon-menu-closed" tabindex="0">
+                  <span class="nav__menu-bottom-text">Menu</span>
+                </use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class=nav-footer>
-        <a href="http://" class="nav__link-footer">
-          <svg class="icon footer-icon">
-            <use xlink:href="/assets/images/icons/home-icon.svg#icon-home" tabindex="0">
-              <span class="nav__link-footer-text">home</span>
-            </use>
-          </svg>
+      <div class="nav-links">
+        <a href="index.html" aria-label="this is a logo with a link to the homepage">
+          <h2 class="nav__links-site-logo">Explore ireland</h2>
         </a>
-        <a href="http://" class="nav__link-footer">
-          <svg class="icon footer-icon">
-            <use xlink:href="/assets/images/icons/icon-compass.svg#icon-compass" tabindex="0">
-              <span class="nav__link-footer-text">Explore</span>
-            </use>
-          </svg>
-        </a>
-        <a href="http://" class="nav__link-footer">
-          <svg class="icon footer-icon">
-            <use xlink:href="/assets/images/icons/map-icon.svg#icon-map" tabindex="0">
-              <span class="nav__link-footer-text">Attractions</span>
-            </use>
-          </svg>
-        </a>
-        <a href="http://" class="nav__link-footer">
-          <svg class="icon footer-icon">
-            <use xlink:href="/assets/images/icons/menu-closed-icon.svg#icon-menu-closed" tabindex="0">
-              <span class="nav__link-footer-text">Menu</span>
-            </use>
-          </svg>
-        </a>
+        <ul>
+          <li>menu link</li>
+          <li>menu link</li>
+          <li>menu link</li>
+        </ul>
       </div>
     </nav>
-
+    <!-- ----------- main content ---------- -->
     <div class="hero-image">
       <img src="/assets/images/hero-image-mobile.jpg" alt="picture of mountains in ireland">
     </div>
 
-    <div class="home-grid-area-1 wrapper-mobile">
+    <div class="home-grid-area-1">
       <div class="card-container">
         <div class="card__explore-title">
           <h1>Explore</h1>
         </div>
         <div class="card__explore">
-          <img  src="/assets/images/andrea-ferrario-nyyJ4NyoDck-mob.jpg" alt="">
+          <img src="/assets/images/andrea-ferrario-nyyJ4NyoDck-mob.jpg" alt="">
           <h2>The cliffs of Moher</h2>
-          <button class=" button card__explore-btn"><p>Explore</p></button>
+          <button class=" button card__explore-btn">
+            <p>Explore</p>
+          </button>
         </div>
         <div class="card__explore">
-          <img src="" alt="">
-          <h2>location</h2>
-          <p>view more</p>
+          <img src="/assets/images/andrea-ferrario-nyyJ4NyoDck-mob.jpg" alt="">
+          <h2>The cliffs of Moher</h2>
+          <button class=" button card__explore-btn">
+            <p>Explore</p>
+          </button>
         </div>
         <div class="card__explore">
-          <img src="" alt="">
-          <h2>location</h2>
-          <p>view more</p>
+          <img src="/assets/images/andrea-ferrario-nyyJ4NyoDck-mob.jpg" alt="">
+          <h2>The cliffs of Moher</h2>
+          <button class=" button card__explore-btn">
+            <p>Explore</p>
+          </button>
         </div>
         <div class="card__explore">
-          <img src="" alt="">
-          <h2>location</h2>
-          <p>view more</p>
+          <img src="/assets/images/andrea-ferrario-nyyJ4NyoDck-mob.jpg" alt="">
+          <h2>The cliffs of Moher</h2>
+          <button class=" button card__explore-btn">
+            <p>Explore</p>
+          </button>
         </div>
+
       </div>
     </div>
 
     <div class="home-grid-area-2">
       <div class="container__page-links">
         <a class="page-links-nature">
-          <svg class="icon icon-nature">
-            <use xlink:href="/assets/images/icons/icon-nature.svg#icon-nature" tabindex="0">
-              <span class="page__links-text">Nature</span>
-            </use>
+          <svg class="icon icon-home-links">
+            <use xlink:href="/assets/images/icons/icon-nature.svg#icon-nature" tabindex="0"></use>
           </svg>
-          <svg class="icon">
-            <use xlink:href="/assets/images/icons/icon-arrow.svg#icon-arrow" tabindex="0">
-            </use>
+          <span class="page__links-text">Nature</span>
+          <svg class="icon icon-home-links"">
+            <use xlink:href="/assets/images/icons/icon-arrow.svg#icon-arrow" tabindex="0"></use>
           </svg>
         </a>
+
         <a class="page-links-hsitory">
-          <svg class="icon">
-            <use xlink:href="/assets/images/icons/icon-history.svg#icon-history" tabindex="0">
-              <span class="page__links-text">History</span>
-            </use>
+          <svg class="icon icon-home-links"">
+            <use xlink:href="/assets/images/icons/icon-history.svg#icon-history" tabindex="0"></use>
           </svg>
-          <svg class="icon">
+          <span class="page__links-text">History</span>
+          <svg class="icon icon-home-links"">
             <use xlink:href="/assets/images/icons/icon-arrow.svg#icon-arrow" tabindex="0">
             </use>
           </svg>
         </a>
+
         <a class="page-links-explore">
-          <svg class="icon">
-            <use xlink:href="/assets/images/icons/icon-compass.svg#icon-compass" tabindex="0">
-              <span class="page__links-text">Explore</span>
-            </use>
+          <svg class="icon icon-home-links"">
+            <use xlink:href="/assets/images/icons/icon-compass.svg#icon-compass" tabindex="0"></use>
           </svg>
-          <svg class="icon">
-            <use xlink:href="/assets/images/icons/icon-arrow.svg#icon-arrow" tabindex="0">
-            </use>
+          <span class="page__links-text">History</span>
+          <svg class="icon icon-home-links"">
+            <use xlink:href="/assets/images/icons/icon-arrow.svg#icon-arrow" tabindex="0"></use>
           </svg>
         </a>
+
       </div>
     </div>
     <div class="home-grid-area-3">
-      <ul class="container__page-images">
-        <li><a href="http://"></a><img src="" alt=""></li>
-        <li><a href="http://"></a><img src="" alt=""></li>
-        <li><a href="http://"></a><img src="" alt=""></li>
-        <li><a href="http://"></a><img src="" alt=""></li>
-        <li><a href="http://"></a><img src="" alt=""></li>
-        <li><a href="http://"></a><img src="" alt=""></li>
-      </ul>
+      <div class="container__location-images">
+        <h1>Irlands top destinations</h1>
+        <a href="http://"><img src="/assets/images/gabriel-ramos-LhuYXZGtelE-locations.jpg" alt="">
+          <h2>location</h2>
+        </a>
+        <a href="http://"><img src="/assets/images/jesse-gardner-4Oi1756LtF4-location.jpg" alt="">
+          <h2>location</h2>
+        </a>
+        <a href="http://"><img src="/assets/images/john-finn--RU1NEhEUfs-location.jpg" alt="">
+          <h2>location</h2>
+        </a>
+        <a href="http://"><img src="/assets/images/raisa-nastukova-jcQGW4nZLRo-location.jpg" alt="">
+          <h2>location</h2>
+        </a>
+        <a href="http://"><img src="/assets/images/robert-v-ruggiero-RRQeeEtReqA-locations.jpg" alt="">
+          <h2>location</h2>
+        </a>
+        <a href="http://"><img src="/assets/images/rory-hennessey-UR-9hOEW-Ww-locations.jpg" alt="">
+          <h2>location</h2>
+        </a>
+      </div>
     </div>
-
+    <!-- ----------- main content ---------- -->
     <footer>
       <div class="footer-container">
-        footer
+        <!-- <div class="social-icons">
+          <a href="#">
+            <svg class="icon icon-social-footer"">
+              <use xlink:href="/assets/images/icons/icon-facebook.svg#icon-facebook" tabindex="0">
+              </use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon icon-social-footer"">
+              <use xlink:href="/assets/images/icons/icon-instagram.svg#icon-instagram" tabindex="0">
+              </use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon icon-social-footer">
+              <use xlink:href="/assets/images/icons/icon-twitter.svg#icon-twitter" tabindex="0">
+              </use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="icon icon-social-footer">
+              <use xlink:href="/assets/images/icons/icon-pinterest.svg#icon-pinterest" tabindex="0">
+              </use>
+            </svg>
+          </a>
+        </div> -->
       </div>
     </footer>
   </div>
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
