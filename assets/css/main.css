@@ -6,7 +6,7 @@ body,
 html {
   margin: 0 auto;
   padding: 0;
-  height: 100%;
+  height: 100vh;
   font-size: 62.5%;
   font-family: "Comfortaa", cursive;
 }
@@ -35,16 +35,88 @@ html {
   margin: 0;
 }
 
-nav {
+h1 {
+  font-size: 2.5rem;
+}
+
+.nav-menu-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: fixed;
+  bottom: 1rem;
+  right: 0;
+  left: 0;
+  margin: 0 1rem 0 1rem;
+  padding: 5px 0 5px 0;
+  border-radius: 1rem;
+  background-color: #ECEBEB;
+  z-index: 1000;
+}
+
+.nav__menu-bottom-text {
+  padding: 5px;
+  font-size: 1.3rem;
+  color: #83898B;
+}
+
+.nav__menu-bottom-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mobile-menu {
+  cursor: pointer;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background-color: #c6cbcf;
+  -webkit-clip-path: square(100px at 90% -10%);
+          clip-path: square(100px at 90% -10%);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  overflow-y: hidden;
+  z-index: 100;
+}
+
+.nav-links.nav-links.open {
+  height: 100%;
+  pointer-events: all;
+}
+
+.nav-links.nav-links ul {
+  margin-top: 2rem;
+}
+
+.nav-links.nav-links li {
+  font-size: 2rem;
+  color: white;
+  padding: 1rem 0 1rem 0px;
+  margin-left: 3rem;
+  width: 80%;
+  border-bottom: 1px solid #adb4b4;
 }
 
 /* ===================
@@ -55,8 +127,6 @@ nav {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 5rem 50rem 35rem 25rem 45rem 29rem 5rem;
-      grid-template-rows: 5rem 50rem 35rem 25rem 45rem 29rem 5rem;
   gap: 2rem;
   font-size: 2rem;
       grid-template-areas: "nav" "hero-image" "home-grid-area-1" "home-grid-area-2" "home-grid-area-3" "footer";
@@ -99,66 +169,45 @@ footer {
   grid-area: footer;
 }
 
+.site-logo {
+  color: #154090;
+  padding: 1rem 0 0 1rem;
+}
+
+.nav__links-site-logo {
+  color: lightcyan;
+  padding: 1rem 0 5px 1rem;
+  border-bottom: lightgrey 2px solid;
+}
+
 footer {
   background-color: #142850;
-  border-radius: 1.8rem;
+  height: 40rem;
 }
 
-.nav-footer {
+.footer-container {
+  height: 100%;
+}
+
+.social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 0 5px 5px 5px;
-  border-radius: 1rem;
-  height: 6rem;
-  background-color: #ECEBEB;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  padding-bottom: 12rem;
 }
 
-.nav__link-footer-text {
-  padding: 5px;
-  font-size: 1.3rem;
-  color: #83898B;
+.icon-social-footer {
+  width: 100%;
+  height: 2rem;
 }
 
-.nav__link-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav__link-text {
-  font-size: 1.2rem;
-  color: #83898B;
-  padding-top: 7px;
-}
-
-.icon {
-  display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+.icon-footer {
+  width: 100%;
+  height: 2rem;
 }
 
 .button {
@@ -173,10 +222,6 @@ footer {
   width: 80%;
   font-size: 1.4rem;
   margin-bottom: 1rem;
-}
-
-.nav-title {
-  color: #154090;
 }
 
 .wrapper-mobile {
@@ -199,7 +244,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: 35rem;
   padding: 1rem;
 }
 
@@ -217,7 +262,6 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 20rem;
   border-radius: 1rem;
   -webkit-box-shadow: 5px 5px 12px black;
           box-shadow: 5px 5px 12px black;
@@ -228,7 +272,7 @@ footer {
   min-width: 22rem;
 }
 
-.card__explore.card__explore:not(:second-child) {
+.card__explore.card__explore:not(:first-child) {
   margin-left: -3rem;
 }
 
@@ -238,8 +282,9 @@ footer {
 }
 
 .card__explore.card__explore:hover ~ .card__explore {
-  -webkit-transform: translateX(3rem);
-          transform: translateX(3rem);
+  -webkit-transform: translateX(5rem);
+          transform: translateX(5rem);
+  z-index: 200;
 }
 
 .card__explore-title {
@@ -270,7 +315,7 @@ footer {
 .card-container img {
   height: 13rem;
   width: 100%;
-  border-radius: 1rem  0;
+  border-radius: 1rem  1rem 0 0;
 }
 
 .card-container h2 {
@@ -308,26 +353,31 @@ footer {
   margin-right: 10rem;
 }
 
-.container__page-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem 1rem;
-  height: 100%;
-  width: 100%;
+.container__location-images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem 3rem;
+  padding: 0 2rem 0 2rem;
+  text-align: center;
 }
 
-.container__page-images.container__page-images li {
-  background-color: yellowgreen;
-  height: 10rem;
-  width: 15rem;
+.container__location-images.container__location-images img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.container__location-images.container__location-images h2 {
+  position: relative;
+  bottom: 20%;
+  background: #28201178;
+  color: white;
+}
+
+.icon-home-links {
+  width: 100%;
+  height: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
