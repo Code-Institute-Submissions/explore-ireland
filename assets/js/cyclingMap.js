@@ -1,0 +1,1 @@
+var cyclingLocation = [{'name':'Ballyhoura - Castlepook Loop','lat':52.3168655,'lng':-8.5028604 }];
