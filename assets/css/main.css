@@ -43,6 +43,14 @@ h2 {
   font-size: 2rem;
 }
 
+h3 {
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 .nav-menu-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +139,7 @@ h2 {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
   font-size: 2rem;
       grid-template-areas: "nav" "hero-image" "home-grid-area-1" "home-grid-area-2" "home-grid-area-3" "footer";
 }
@@ -174,9 +182,17 @@ footer {
 }
 
 .site-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   color: #154090;
-  padding: 1rem 0 0 1rem;
   font-size: 2.5rem;
+  padding-top: 2rem;
 }
 
 .nav__links-site-logo {
@@ -233,11 +249,18 @@ footer {
   margin: 0 1rem 0 1rem;
 }
 
-.hero-image {
-  margin: 0 auto;
+.hero-image-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
 }
 
-.hero-image img {
+.hero-image {
+  max-width: 100%;
+  height: auto;
   border-radius: 1.8rem;
 }
 
@@ -331,10 +354,12 @@ footer {
 .container__page-links {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  max-width: 100vw;
   gap: 1rem;
   background-color: #EDF2F5;
   padding: 3rem 2rem 1.5rem 2rem;
-  height: 100%;
 }
 
 .container__page-links.container__page-links a {
@@ -382,11 +407,90 @@ footer {
 }
 
 .icon-home-links {
-  width: 100%;
+  width: auto;
   height: 3rem;
+}
+
+.mobile-menu-btn-close {
+  display: none;
 }
 
 #map {
   height: 40vh;
+}
+
+.cycling-list ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 6rem 5rem;
+  justify-items: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: #e9e6e6;
+}
+
+.cycling-list ul li {
+  border: 2px solid #bbb3bb;
+  border-radius: 5px;
+  padding: 2rem 2rem 1rem 2rem;
+  max-width: 40rem;
+  width: 100%;
+}
+
+.cycling-list h2 {
+  color: #00909e;
+  width: 100%;
+}
+
+.cycling-list h3 {
+  padding-top: 2rem;
+}
+
+.cycling-list-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  border-bottom: 2px solid lightgrey;
+}
+
+.icon-discover-links {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  height: 2.5rem;
+  width: auto;
+}
+
+.weather-icon {
+  height: auto;
+  width: 5rem;
+}
+
+.location {
+  padding-top: 2rem;
+}
+
+.temperature-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.temperature-value p {
+  font-size: 2.5rem;
 }
 /*# sourceMappingURL=main.css.map */
