@@ -4,7 +4,7 @@
 .container-home {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
   font-size: $primary-font-size;
   grid-template-areas: 
   "nav"

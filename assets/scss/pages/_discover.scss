@@ -1,3 +1,63 @@
 #map {
   height: 40vh;
 }
+
+.cycling-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 6rem 5rem;
+  justify-items: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: rgb(233, 230, 230);
+
+  & li {
+    border: 2px solid #bbb3bb;
+    border-radius: 5px;
+    padding: 2rem 2rem 1rem 2rem;
+    max-width: 40rem;
+    width: 100%;
+  }
+}
+
+.cycling-list h2 {
+  color: #00909e;
+  width: 100%;
+}
+
+.cycling-list h3 {
+  padding-top: 2rem;
+}
+
+.cycling-list-heading {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  border-bottom: 2px solid lightgrey;
+}
+
+.icon-discover-links {
+  flex-shrink: 2;
+  height: 2.5rem;
+  width: auto;
+}
+
+.weather-icon {
+  height: auto;
+  width: 5rem;
+}
+
+.location {
+  padding-top: 2rem;
+}
+
+.temperature-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.temperature-value p {
+  font-size: 2.5rem;
+}

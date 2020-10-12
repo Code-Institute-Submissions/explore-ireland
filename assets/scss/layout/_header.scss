@@ -1,7 +1,10 @@
 .site-logo  {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   color: $nav-logo-color;
-  padding: 1rem 0 0 1rem;
   font-size: 2.5rem;
+  padding-top: 2rem;
 }
 
 .nav__links-site-logo {
