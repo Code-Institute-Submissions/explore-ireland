@@ -1,28 +1,8 @@
 // breakpoints
+
 //small devices
 @mixin media-breakpoint-sm {
-  @media (min-width: #{$screen-sm-min}) {
+  @media (max-width: #{$screen-sm-max}) {
     @content;
-}
-}
-
-// Medium devices
-@mixin media-breakpoint-md {
-  @media (min-width: #{$screen-md-min}) {
-    @content
-  }
-}
-
-// Large devices
-@mixin media-breakpoint-lg {
-  @media (min-width: #{$screen-lg-min}) {
-    @content
-  }
-}
-
-// Extra large devices
-@mixin media-breakpoint-xl {
-  @media (min-width: #{$screen-xl-min}) {
-    @content
   }
 }

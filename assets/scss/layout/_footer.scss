@@ -1,35 +1,36 @@
-// footer
-
-footer {
-  background-color: $secondary-color;
-  height: 40rem;
-}
-
 .footer-container {
-  display: grid;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  height: 100%;
+  align-items: center;
+  height: 40rem;
+  background-color: $secondary-color;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 // social icons
-
 .social-icons {
   display: flex;
-  align-items: flex-end;
-  padding-bottom: 12rem;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 2rem;
+  height: 100%;
+
+  @include media-breakpoint-sm {
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 16rem;
+  }
 }
 
 .icon-social-footer {
   width: 2.5rem;
   height: 2.5rem;
-  margin-top: 1.5rem;
 }
 
 // email 
-
 form {
   position: absolute;
   top: 5px;
@@ -48,12 +49,22 @@ form h2 {
 .email-container {
   position: relative;
   height: 20rem;
-  width: 38rem;
+  width: 40vw;
+  min-width: 40rem;
   padding: 3rem;
   border-radius: 0.5rem;
   box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.125);
   background-color: #142850;
   color: #333;
+
+  @include media-breakpoint-sm {
+    height: 23rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 100%;
+    min-width: 27rem;
+  }
 }
 
 .email-container h2 {

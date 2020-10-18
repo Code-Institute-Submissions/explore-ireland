@@ -1,14 +1,8 @@
-.site-logo  {
+.site-logo {
   display: flex;
   justify-content: center;
   align-content: center;
   color: $nav-logo-color;
   font-size: 2.5rem;
   padding-top: 2rem;
-}
-
-.nav__links-site-logo {
-  color: lightcyan;
-  padding: 1rem 0 5px 1rem;
-  border-bottom: lightgrey 2px solid;
 }

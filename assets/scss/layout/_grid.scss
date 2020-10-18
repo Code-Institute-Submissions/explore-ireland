@@ -1,19 +1,19 @@
 /* ===================
-   Mobile grid
+   home page grid
    ================= */
 .container-home {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1rem;
   font-size: $primary-font-size;
+  max-width: 150rem;
+  width: 100%;
+  margin: auto;
   grid-template-areas:
     "nav"
     "hero-image"
     "home-grid-area-1"
     "home-grid-area-2"
-    "home-grid-area-3"
-    "map-trails"
-    "footer";
+    "map-trails";
 }
 
 /* =================== grid areas ================= */
@@ -33,14 +33,6 @@ nav {
   grid-area: home-grid-area-2;
 }
 
-.home-grid-area-3 {
-  grid-area: home-grid-area-3;
-}
-
 .map-trails {
   grid-area: map-trails;
-}
-
-footer {
-  grid-area: footer;
 }

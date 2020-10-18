@@ -1,30 +1,31 @@
 /* ===================
    Base resets
    ================= */
-   body,
-   html {
-     margin: 0 auto;
-     padding: 0;
-     height: 100vh;
-     font-size: 62.5%;
-     font-family: $primary-font;
-   }
-   
-   *,
-   *:before,
-   *:after {
-     box-sizing: border-box;
-   }
-   
-   * li {
-     list-style: none;
-   }
-   
-   * a {
-     text-decoration: none;
-   }
-   
-   * ul {
-     margin: 0;
-     padding: 0;
-   }
+body,
+html {
+  margin: 0 auto;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-size: 62.5%;
+  font-family: $primary-font;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* ul {
+  margin: 0;
+  padding: 0;
+}
+
+* li {
+  list-style: none;
+}
+
+* a {
+  text-decoration: none;
+}
