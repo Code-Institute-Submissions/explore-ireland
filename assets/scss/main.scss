@@ -1,19 +1,11 @@
 @import 'abstracts/variables',
-'abstracts/functions',
-'abstracts/mixins',
-'abstracts/placeholders';
-
-// @import
-//   'vendors/jquery-ui';
+'abstracts/mixins';
 
 @import 'base/reset',
 'base/typography';
 
-@import 'layout/navigation',
-'layout/grid',
+@import 'layout/grid',
 'layout/header',
 'layout/footer';
-
-@import 'components/buttons';
 
 @import 'pages/index';
