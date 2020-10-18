@@ -6,14 +6,16 @@
   grid-template-columns: 1fr;
   gap: 1rem;
   font-size: $primary-font-size;
-  grid-template-areas: 
-  "nav"
-  "hero-image"
-  "home-grid-area-1"
-  "home-grid-area-2"
-  "home-grid-area-3"
-  "footer";
+  grid-template-areas:
+    "nav"
+    "hero-image"
+    "home-grid-area-1"
+    "home-grid-area-2"
+    "home-grid-area-3"
+    "map-trails"
+    "footer";
 }
+
 /* =================== grid areas ================= */
 nav {
   grid-area: nav;
@@ -35,7 +37,10 @@ nav {
   grid-area: home-grid-area-3;
 }
 
+.map-trails {
+  grid-area: map-trails;
+}
+
 footer {
   grid-area: footer;
 }
-
