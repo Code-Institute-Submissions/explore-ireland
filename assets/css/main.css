@@ -141,7 +141,7 @@ p {
       grid-template-columns: 1fr;
   gap: 1rem;
   font-size: 2rem;
-      grid-template-areas: "nav" "hero-image" "home-grid-area-1" "home-grid-area-2" "home-grid-area-3" "footer";
+      grid-template-areas: "nav" "hero-image" "home-grid-area-1" "home-grid-area-2" "home-grid-area-3" "map-trails" "footer";
 }
 
 /* =================== grid areas ================= */
@@ -175,8 +175,14 @@ nav {
   grid-area: home-grid-area-3;
 }
 
-footer {
+.map-trails {
   -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: map-trails;
+}
+
+footer {
+  -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: footer;
 }
@@ -207,6 +213,14 @@ footer {
 }
 
 .footer-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
 }
 
@@ -217,18 +231,86 @@ footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 100%;
   padding-bottom: 12rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .icon-social-footer {
-  width: 100%;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 1.5rem;
 }
 
-.icon-footer {
-  width: 100%;
-  height: 2rem;
+form {
+  position: absolute;
+  top: 5px;
+}
+
+form h2 {
+  padding-bottom: 1rem;
+  background: -webkit-linear-gradient(60deg, #63a5f0 5%, #3a82d5 60%, #3aa4d5 30%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.email-container {
+  position: relative;
+  height: 20rem;
+  width: 38rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.125);
+          box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.125);
+  background-color: #142850;
+  color: #333;
+}
+
+.email-container h2 {
+  color: #126888;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 0 0 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none;
+  width: 250px;
+  -webkit-clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.messageinputresize {
+  background-color: black;
 }
 
 .button {
@@ -343,7 +425,7 @@ footer {
 .card-container img {
   height: 13rem;
   width: 100%;
-  border-radius: 1rem  1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .card-container h2 {
@@ -406,6 +488,10 @@ footer {
   color: white;
 }
 
+.map-trails h1 {
+  padding-left: 2rem;
+}
+
 .icon-home-links {
   width: auto;
   height: 3rem;
@@ -415,10 +501,6 @@ footer {
   display: none;
 }
 
-#map {
-  height: 40vh;
-}
-
 .cycling-list ul {
   display: -ms-grid;
   display: grid;
@@ -426,25 +508,29 @@ footer {
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 6rem 5rem;
   justify-items: center;
-  margin-top: 3rem;
   padding: 2rem;
-  background-color: #e9e6e6;
 }
 
 .cycling-list ul li {
-  border: 2px solid #bbb3bb;
-  border-radius: 5px;
-  padding: 2rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  padding: 2rem 2rem 5px 2rem;
   max-width: 40rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 5px;
+          box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 5px;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
   width: 100%;
+  height: 100%;
 }
 
-.cycling-list h2 {
-  color: #00909e;
-  width: 100%;
+.cycling-list ul li:hover {
+  -webkit-transform: translate(0, -1rem);
+          transform: translate(0, -1rem);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.125) -1rem 1rem 4rem;
+          box-shadow: rgba(0, 0, 0, 0.125) -1rem 1rem 4rem;
 }
 
-.cycling-list h3 {
+.location {
   padding-top: 2rem;
 }
 
@@ -452,45 +538,68 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  border-bottom: 2px solid lightgrey;
-}
-
-.icon-discover-links {
-  -ms-flex-negative: 2;
-      flex-shrink: 2;
-  height: 2.5rem;
-  width: auto;
-}
-
-.weather-icon {
-  height: auto;
-  width: 5rem;
-}
-
-.location {
-  padding-top: 2rem;
-}
-
-.temperature-value {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.cycling-list-heading h2 {
+  display: inline-block;
+  border-bottom: 5px solid #37206d;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.icon-discover-links {
+  height: 2.5rem;
+  width: 5rem;
+}
+
+.location-header {
   padding-top: 1rem;
+  text-transform: uppercase;
+  background-color: #5a6883;
+  -webkit-clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 5px;
+  border-radius: 0 0 1rem;
+  text-align: center;
+}
+
+.location-header h2 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.weather-container {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.0rem;
+  padding-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .temperature-value p {
   font-size: 2.5rem;
+}
+
+.icon-weather {
+  height: auto;
+  margin: auto;
+  width: 6rem;
+}
+
+#map {
+  height: 40rem;
+  width: 100%;
+  border-radius: 1rem;
+  width: 50vw;
+  margin: auto;
+  padding: 2rem 2rem 0 0;
 }
 /*# sourceMappingURL=main.css.map */
