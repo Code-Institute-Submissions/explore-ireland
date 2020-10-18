@@ -74,7 +74,7 @@ let cityId = [
   2963397, // county kilkenny
   2960991 //  county waterford
 ];
-
+// API call for weather data using the open weather API
 getWeather = () => {
   let api = `https://api.openweathermap.org/data/2.5/group?id=${cityId}&appid=${apikey}&units=metric`;
   console.log(api);
@@ -88,70 +88,70 @@ getWeather = () => {
       const locationValue = weatherListData.filter((location) => {
         if (location.name === "County Mayo") {
           locationMayo.innerHTML = weatherListData[0].name;
-          weatherIconMayo.innerHTML = `<img id="weather-icon" src="../assets/images/weather-icons/${weatherListData[0].weather[0].icon}.svg" alt="">`
+          weatherIconMayo.innerHTML = `<img id="weather-icon" src="./assets/images/weather-icons/${weatherListData[0].weather[0].icon}.svg" alt="">`
           weatherDescriptionMayo.innerHTML = weatherListData[0].weather[0].description;
           temperatureMayo.innerHTML = Math.round(weatherListData[0].main.temp);
           temperatureMayo.innerHTML += '˚<span>C</span>';
 
         } else if (location.name === "County Cork") {
           locationCork.innerHTML = weatherListData[1].name;
-          weatherIconCork.innerHTML = `<img  src="../assets/images/weather-icons/${weatherListData[1].weather[0].icon}.svg" alt="">`
+          weatherIconCork.innerHTML = `<img  src="./assets/images/weather-icons/${weatherListData[1].weather[0].icon}.svg" alt="">`
           weatherDescriptionCork.innerHTML = weatherListData[1].weather[0].description;
           temperatureCork.innerHTML = Math.round(weatherListData[1].main.temp);
           temperatureCork.innerHTML += '˚<span>C</span>';
 
         } else if (location.name === "County Wexford") {
           locationWexford.innerHTML = weatherListData[2].name;
-          weatherIconWexford.innerHTML = `<img  src="../assets/images/weather-icons/${weatherListData[2].weather[0].icon}.svg" alt="">`
+          weatherIconWexford.innerHTML = `<img  src="./assets/images/weather-icons/${weatherListData[2].weather[0].icon}.svg" alt="">`
           weatherDescriptionWexford.innerHTML = weatherListData[2].weather[0].description;
           temperatureWexford.innerHTML = Math.round(weatherListData[2].main.temp);
           temperatureWexford.innerHTML += '˚<span>C</span>';
 
         } else if (location.name === "County Galway") {
           locationGalway.innerHTML = weatherListData[3].name;
-          weatherIconGalway.innerHTML = `<img  src="../assets/images/weather-icons/${weatherListData[3].weather[0].icon}.svg" alt="">`
+          weatherIconGalway.innerHTML = `<img  src="./assets/images/weather-icons/${weatherListData[3].weather[0].icon}.svg" alt="">`
           weatherDescriptionGalway.innerHTML = weatherListData[3].weather[0].description;
           temperatureGalway.innerHTML = Math.round(weatherListData[3].main.temp);
           temperatureGalway.innerHTML += '˚<span>C</span>';
 
         } else if (location.name === "County Donegal") {
           locationDonegal.innerHTML = weatherListData[4].name;
-          weatherIconDonegal.innerHTML = `<img  src="../assets/images/weather-icons/${weatherListData[4].weather[0].icon}.svg" alt="">`
+          weatherIconDonegal.innerHTML = `<img  src="./assets/images/weather-icons/${weatherListData[4].weather[0].icon}.svg" alt="">`
           weatherDescriptionDonegal.innerHTML = weatherListData[4].weather[0].description;
           temperatureDonegal.innerHTML = Math.round(weatherListData[4].main.temp);
           temperatureDonegal.innerHTML += '˚<span>C</span>';
 
         } else if (location.name === "County Clare") {
           locationClare.innerHTML = weatherListData[5].name;
-          weatherIconClare.innerHTML = `<img  src="../assets/images/weather-icons/${weatherListData[5].weather[0].icon}.svg" alt="">`
+          weatherIconClare.innerHTML = `<img  src="./assets/images/weather-icons/${weatherListData[5].weather[0].icon}.svg" alt="">`
           weatherDescriptionClare.innerHTML = weatherListData[5].weather[0].description;
           temperatureClare.innerHTML = Math.round(weatherListData[5].main.temp);
           temperatureClare.innerHTML += '˚<span>C</span>';
 
         } else if (location.name === "County Roscommon") {
           locationRoscommon.innerHTML = weatherListData[6].name;
-          weatherIconRoscommon.innerHTML = `<img  src="../assets/images/weather-icons/${weatherListData[6].weather[0].icon}.svg" alt="">`
+          weatherIconRoscommon.innerHTML = `<img  src="./assets/images/weather-icons/${weatherListData[6].weather[0].icon}.svg" alt="">`
           weatherDescriptionRoscommon.innerHTML = weatherListData[6].weather[0].description;
           temperatureRoscommon.innerHTML = Math.round(weatherListData[6].main.temp);
           temperatureRoscommon.innerHTML += '˚<span>C</span>';
 
         } else if (location.name === "County Meath") {
           locationMeath.innerHTML = weatherListData[7].name;
-          weatherIconMeath.innerHTML = `<img  src="../assets/images/weather-icons/${weatherListData[7].weather[0].icon}.svg" alt="">`
+          weatherIconMeath.innerHTML = `<img  src="./assets/images/weather-icons/${weatherListData[7].weather[0].icon}.svg" alt="">`
           weatherDescriptionMeath.innerHTML = weatherListData[7].weather[0].description;
           temperatureMeath.innerHTML = Math.round(weatherListData[7].main.temp);
           temperatureMeath.innerHTML += '˚<span>C</span>';
 
         } else if (location.name === "County Kilkenny") {
           locationKilkenny.innerHTML = weatherListData[8].name;
-          weatherIconkilkenny.innerHTML = `<img  src="../assets/images/weather-icons/${weatherListData[8].weather[0].icon}.svg" alt="">`
+          weatherIconkilkenny.innerHTML = `<img  src="./assets/images/weather-icons/${weatherListData[8].weather[0].icon}.svg" alt="">`
           weatherDescriptionKilkenny.innerHTML = weatherListData[8].weather[0].description;
           temperaturekilkenny.innerHTML = Math.round(weatherListData[8].main.temp);
           temperaturekilkenny.innerHTML += '˚<span>C</span>';
 
         } else if (location.name === "County Waterford") {
           locationWaterford.innerHTML = weatherListData[9].name;
-          weatherIconWaterford.innerHTML = `<img  src="../assets/images/weather-icons/${weatherListData[9].weather[0].icon}.svg" alt="">`
+          weatherIconWaterford.innerHTML = `<img  src="./assets/images/weather-icons/${weatherListData[9].weather[0].icon}.svg" alt="">`
           weatherDescriptionWaterford.innerHTML = weatherListData[9].weather[0].description;
           temperatureWaterford.innerHTML = Math.round(weatherListData[9].main.temp);
           temperatureWaterford.innerHTML += '˚<span>C</span>';
