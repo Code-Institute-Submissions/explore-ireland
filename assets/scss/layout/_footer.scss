@@ -1,24 +1,92 @@
+// footer
+
 footer {
   background-color: $secondary-color;
   height: 40rem;
 }
+
 .footer-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
   height: 100%;
 }
+
+// social icons
 
 .social-icons {
   display: flex;
   align-items: flex-end;
-  height: 100%;
   padding-bottom: 12rem;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .icon-social-footer {
-  width: 100%;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 1.5rem;
 }
 
-.icon-footer {
-  width: 100%;
-  height: 2rem;
+// email 
+
+form {
+  position: absolute;
+  top: 5px;
+}
+
+form h2 {
+  padding-bottom: 1rem;
+  background: -webkit-linear-gradient(60deg, #63a5f0 5%, #3a82d5 60%, #3aa4d5 30%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.email-container {
+  position: relative;
+  height: 20rem;
+  width: 38rem;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, 0.125);
+  background-color: #142850;
+  color: #333;
+}
+
+.email-container h2 {
+  color: rgb(18, 104, 136);
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 0 0 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none;
+  width: 250px;
+  clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
 }
