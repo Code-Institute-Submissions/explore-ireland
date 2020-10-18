@@ -8,7 +8,7 @@
   margin: 1rem;
 }
 
-.hero-image  {
+.hero-image {
   max-width: 100%;
   height: auto;
   border-radius: $primary-radius;
@@ -76,7 +76,7 @@
 .card-container img {
   height: 13rem;
   width: 100%;
-  border-radius: 1rem  1rem 0 0;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .card-container h2 {
@@ -111,7 +111,6 @@
 .container__location-images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  // align-items: center;
   gap: 3rem 3rem;
   padding: 0 2rem 0 2rem;
   text-align: center;
@@ -130,12 +129,105 @@
   }
 }
 
+.map-trails h1 {
+  padding-left: 2rem;
+}
+
 //icons 
 .icon-home-links {
- width: auto;
- height: 3rem;
+  width: auto;
+  height: 3rem;
 }
 
 .mobile-menu-btn-close {
   display: none;
+}
+
+
+.cycling-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 6rem 5rem;
+  justify-items: center;
+  padding: 2rem;
+
+  & li {
+    border-radius: 1rem;
+    padding: 2rem 2rem 5px 2rem;
+    max-width: 40rem;
+    box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 5px;
+    transition: ease-in-out 0.3s;
+    width: 100%;
+    height: 100%;
+  }
+
+  & li:hover {
+    transform: translate(0, -1rem);
+    box-shadow: rgba(0, 0, 0, 0.125) -1rem 1rem 4rem;
+  }
+}
+
+.location {
+  padding-top: 2rem;
+}
+
+.cycling-list-heading {
+  display: flex;
+  align-items: center;
+}
+
+.cycling-list-heading h2 {
+  display: inline-block;
+  border-bottom: 5px solid #37206d;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.icon-discover-links {
+  height: 2.5rem;
+  width: 5rem;
+}
+
+.location-header {
+  padding-top: 1rem;
+  text-transform: uppercase;
+  background-color: #5a6883;
+  clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
+  padding: 5px;
+  border-radius: 0 0 1rem;
+  text-align: center;
+}
+
+.location-header h2 {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.weather-container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.0rem;
+  padding-top: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.temperature-value p {
+  font-size: 2.5rem;
+}
+
+.icon-weather {
+  height: auto;
+  margin: auto;
+  width: 6rem;
+}
+
+#map {
+  height: 40rem;
+  width: 100%;
+  border-radius: 1rem;
+  width: 50vw;
+  margin: auto;
+  padding: 2rem 2rem 0 0;
 }
