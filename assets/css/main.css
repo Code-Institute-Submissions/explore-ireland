@@ -309,10 +309,6 @@ input[type="submit"] {
           clip-path: polygon(20px 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.messageinputresize {
-  background-color: black;
-}
-
 .button {
   background-color: #1E5F74;
   color: white;
