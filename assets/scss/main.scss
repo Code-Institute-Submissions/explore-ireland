@@ -1,27 +1,19 @@
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/placeholders';
+@import 'abstracts/variables',
+'abstracts/functions',
+'abstracts/mixins',
+'abstracts/placeholders';
 
 // @import
 //   'vendors/jquery-ui';
 
-@import
-  'base/reset',
-  'base/typography';
+@import 'base/reset',
+'base/typography';
 
-@import
-  'layout/navigation',
-  'layout/grid',
-  'layout/header',
-  'layout/footer';
+@import 'layout/navigation',
+'layout/grid',
+'layout/header',
+'layout/footer';
 
-@import
-  'components/buttons';
+@import 'components/buttons';
 
-@import
-  'pages/index',
-  'pages/discover',
-  'pages/hiking-trails',
-  'pages/museum';
+@import 'pages/index';
