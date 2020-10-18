@@ -1,4 +1,4 @@
-
+// cycle locations
 let cyclingLocation = [
   { 'name': 'Achill Cycle Hub', 'lat': 53.97610111, 'lng': -10.08038879 },
   { 'name': 'Ballintotis- Castlepook Loop', 'lat': 51.911149, 'lng': -8.092401 },
@@ -12,12 +12,11 @@ let cyclingLocation = [
   { 'name': 'North Kilkenny Cycle Loop', 'lat': 52.649863, 'lng': -7.249158 }
 ];
 
-var map;
-function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
+let map;
+initMap = () => {
+  let map = new google.maps.Map(document.getElementById("map"), {
     zoom: 6,
     center: new google.maps.LatLng(53.14240, -6.266155),
-
     styles: [
       {
         "featureType": "administrative",
@@ -209,29 +208,24 @@ function initMap() {
         ]
       }
     ]
-
   });
 
-  for (var x in cyclingLocation) {
-    var trail = cyclingLocation[x];
-    var location = new google.maps.LatLng(trail.lat, trail.lng);
+  for (let x in cyclingLocation) {
+    let trail = cyclingLocation[x];
+    let location = new google.maps.LatLng(trail.lat, trail.lng);
     addMarker(map, trail.name, location);
   }
 }
-function addMarker(map, name, location) {
-  var marker = new google.maps.Marker({
+
+addMarker = (map, name, location) => {
+  let marker = new google.maps.Marker({
     position: location,
     map: map
   });
-  var infowindow = new google.maps.InfoWindow({
+  let infowindow = new google.maps.InfoWindow({
     content: name
   });
   google.maps.event.addListener(marker, 'click', function () {
     infowindow.open(map, marker);
   });
 }
-
-
-// map styles credit snazy maps
-// Author 傑立資訊-Julyinfo
-// link https://snazzymaps.com/style/128056/傑立資訊-julyinfo.com
