@@ -44,7 +44,7 @@ To view changes made throughout development, I used Visual studio code with a li
 
 I used Github integrated with visual studio code to keep track of my changes and deploy the final project.
 
-##Technologies Used
+## Technologies Used
 
 HTML5
 SCSS / CSS 
@@ -56,7 +56,7 @@ Firefox developer tools
 Adobe XD
 Visual studio code
 
-Credits
+## Credits
 
 Photos used: hero image
 photographer: Dimitry Anikin
