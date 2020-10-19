@@ -47,13 +47,19 @@ I used Github integrated with visual studio code to keep track of my changes and
 ## Technologies Used
 
 HTML5
+
 SCSS / CSS 
+
 Javascript
-Google fonts
+
 Github
+
 Google Chrome developer
+
 Firefox developer tools
+
 Adobe XD
+
 Visual studio code
 
 ## Credits
