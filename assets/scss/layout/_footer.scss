@@ -39,7 +39,7 @@ form {
 form h2 {
   padding-bottom: 1rem;
   background: -webkit-linear-gradient(60deg, #63a5f0 5%, #3a82d5 60%, #3aa4d5 30%);
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
