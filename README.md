@@ -32,11 +32,11 @@ Implement dropdown navigation where the user can choose from a list of popular t
 
 ## Testing
 
-I tested the application using both chrome developer tools for javascript testing to test the API calls & console log errors & to console log the object data from the weather API. I have tested the application across 3 browsers. Safari, Chrome browser & Mozilla Firefox.
+I tested the application using both chrome developer tools for javascript testing to test the API calls & console log errors & to console log the object data from the weather API. I have tested the application across 3 browsers. Safari, Chrome browser & Mozilla Firefox. I used google chrome tools console to check for errors deteced when loading.
 
-I used Firefox to make changes to CSS and for its ease of use with CSS grid.
+I used Firefox to view the application on different user devices, mobile, desktop & the application responsiveness between those sizes.
 
-For HTML & CSS validation I used W3c validator to check for any errors. There are warnings detected on the HTML empty headers where the weather API data is inserted into the DOM.
+For HTML & CSS validation I used W3c validator to check for any errors. There are warnings detected on the HTML empty headers where the weather API data is inserted into the DOM. I left the h2 elements for the descriptions to dislay a heading 2 HTML tags.
 
 To view changes made throughout development, I used Visual studio code with a live server plugin to view any changes made.
 
