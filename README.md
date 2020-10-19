@@ -1,11 +1,9 @@
-# milestone-project-2
-Code Institute : This project is a web app designed to incorporate a javascript API, CSS &amp; HTML
-
 # Milestone project 2 - Code Institude
 
 
 
-
+Inline-style: 
+![alt text](https://github.com/ciaran-toner/explore-ireland/blob/master/assets/images/explore-ireland:mockup-design.png "Logo Title Text 1")
 
 
 
