@@ -16,26 +16,16 @@ The design of the website is a one page application that offers a clean modern &
 ## Features
 
 
+- Interacted with Google map Api to display markers on map using object data from sportireland.ie
+
+- Interacted with Open weather Api to retrive weather data from locations in Ireland. The data from the API was current weather temperature, weather description, weather icon id to display icons for the given weather conditions.
+
+- Intergrated emailJS API to recieve email from users to would take in users email & message would would send the email on to gmail account.
+
+
 # Future features I would like to add.
 
 Implement a dropdown navigation where the user can choose from a list of popular travel destnations, museums, & hotels. It would display a list of data with a image & map location with weather.
-
-HTML 5
-
-Javascript
-
-Interacted with Google map Api to display markers on map using object data from sportireland.ie
-
-Interacted with Open weather Api to retrive weather data from locations in Ireland. The data from the API was current weather temperature, weather description, weather icon id to display icons for the given weather conditions.
-
-Intergrated emailJS API to recieve email from users to would take in users email & message would would send the email on to gmail account.
-
-Vanilla CSS
-I did not use any CSS libraries or frameworks in this project as I felt it would be a great learning opportunity to use vanilla CSS. This provided me with a greater understanding off CSS and all it has to offer.
-
-SCSS
-I wanted to use a file structuring method rather than one main CSS file & to try to introduce modular CSS components to the site. Although I mainly just wrote CSS it was great to learn about sass and its benefits.
-
 
 
 ## Testing
@@ -100,4 +90,13 @@ source:https://www.emailjs.com
 Google fonts
 
 
+Vanilla CSS
+I did not use any CSS libraries or frameworks in this project as I felt it would be a great learning opportunity to use vanilla CSS. This provided me with a greater understanding off CSS and all it has to offer.
 
+SCSS
+I wanted to use a file structuring method rather than one main CSS file & to try to introduce modular CSS components to the site. Although I mainly just wrote CSS it was great to learn about sass and its benefits.
+
+
+HTML 5
+
+Javascript
